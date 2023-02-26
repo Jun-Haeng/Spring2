@@ -32,9 +32,7 @@ dependencies {
 	implementation 'javax.servlet:jstl'
 	//JSP 추가 끝
 
-	// https://mvnrepository.com/artifact/javax.servlet/jstl
 	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
-
 }
 
 tasks.named('test') {

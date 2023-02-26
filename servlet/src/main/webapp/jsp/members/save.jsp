@@ -1,8 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page import="hello.servlet.domain.member.MemberRepository" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    // request, response 그냥 사용 가능
+    //request, response 사용 가능
     MemberRepository memberRepository = MemberRepository.getInstance();
 
     System.out.println("MemberSaveServlet.service");
@@ -11,8 +11,8 @@
 
     Member member = new Member(username, age);
     memberRepository.save(member);
-%>
 
+%>
 <html>
 <head>
     <title>Title</title>
